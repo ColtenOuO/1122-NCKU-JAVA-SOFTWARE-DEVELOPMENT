@@ -36,11 +36,11 @@ public class HW3 {
         int RetrieveHorizontal() {
             return this.horizontal;
         }
-        int calculateManhattanDistance(Point other) {
-            
+        public int calculateManhattanDistance(Point other) {
+            return Math.abs(this.vertical - other.vertical) + Math.abs(this.horizontal - other.horizontal);
         }
-        double ChebyshevDistance(Point other) {
-            
+        public double ChebyshevDistance(Point other) {
+            return Math.max(Math.abs(this.vertical-other.vertical),Math.abs(this.horizontal-other.horizontal));
         }
         void Output() {
             System.out.print(this.RetrieveVertical());
@@ -59,6 +59,7 @@ public class HW3 {
         int move_y = scanner.nextInt();
 
         Point point = new Point(main_x,main_y);
+        Point other = new Point(other_x,other_y);
         point.Output();
         point.Move(move_x,move_y);
         point.Output();
@@ -67,6 +68,7 @@ public class HW3 {
             point.Output();
         }
 
-        System.out.println()
+        System.out.println(point.calculateManhattanDistance(other));
+        System.out.println(point.ChebyshevDistance(other));
     }
 }
