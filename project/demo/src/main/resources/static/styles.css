@@ -1,6 +1,33 @@
+.time {
+    padding-right: 20px;
+}
 .title-text {
     padding-left: 20px; /* 文本向右移動20像素 */
 }
+.topic-choose {
+    
+}
+
+.textareas-container {
+    display: flex;
+    justify-content: space-between; /* 使子元素分佈在容器的兩側 */
+    width: 100%; /* 容器寬度設為 100% */
+}
+
+.input-box {
+    width: 45%;
+    height: 500px;
+    margin: 20px 2.5%;
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left;
+    vertical-align: top;
+    resize: none;
+}
+
 body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
@@ -21,20 +48,6 @@ header {
     align-items: center;
 }
 
-.input-box {
-    width: 45%;
-    height: 500px;
-    margin: 20px 2.5%;
-    background-color: #fff;
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: left;
-    vertical-align: top;
-    resize: none;
-}
-
 .footer {
     text-align: center;
     padding: 20px 0;
@@ -52,9 +65,19 @@ header {
     font-size: 16px;
     transition: all 0.5s ease; /* Larger floating effect */
 }
-
 .button:hover {
     background-color: rgba(255, 255, 255, 0.6);
     transform: scale(1.1); /* Enlarged on hover */
     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+.button.hide {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.CodeMirror {
+    margin-top: 30px;
+    width: 800px;
+    height: 550px;
+    border: 1px solid #ccc
 }

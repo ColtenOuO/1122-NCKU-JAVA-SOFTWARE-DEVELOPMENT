@@ -1,23 +1,36 @@
 <!DOCTYPE html>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/javascript/javascript.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/clike/clike.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/addon/edit/closebrackets.min.js"></script>
+
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
-<title>Colorful Page with Adjusted Layout</title>
+<title>程式競賽系統 BETA</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <header>
     <p class="title-text">程式競賽系統 BETA</p>
-    <div id="time"></div>
+    <p class="topic-choose">button-content</p>
+    <div class = "time" id="time"></div>
 </header>
-<div style="display: flex; width: 100%; justify-content: space-between;">
-    <textarea class="input-box"></textarea>
-    <textarea class="input-box"></textarea>
+
+
+
+<div class="textareas-container">
+    <textarea id="code1" class="input-box"></textarea>
+    <textarea id="code2" class="input-box"></textarea>
 </div>
 
+
 <div class="footer">
-    <button class="button">實作題</button>
-    <button class="button">二分搜</button>
+    <button class="button" data-message="選擇主題：實作題">實作題</button>
+    <button class="button" data-message="選擇主題：二分搜">二分搜</button>
     <button class="button">三分搜</button>
     <button class="button">貪心算法</button>
     <button class="button">分治</button>
