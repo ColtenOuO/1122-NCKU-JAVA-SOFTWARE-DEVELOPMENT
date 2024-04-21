@@ -1,0 +1,60 @@
+.title-text {
+    padding-left: 20px; /* 文本向右移動20像素 */
+}
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #ffc107;
+    color: white;
+    padding: 3px 20px;
+    text-align: left;
+    font-size: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-box {
+    width: 45%;
+    height: 500px;
+    margin: 20px 2.5%;
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left;
+    vertical-align: top;
+    resize: none;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    width: 14%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.3); /* More transparency */
+    border: none;
+    color: #333;
+    font-size: 16px;
+    transition: all 0.5s ease; /* Larger floating effect */
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: scale(1.1); /* Enlarged on hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
