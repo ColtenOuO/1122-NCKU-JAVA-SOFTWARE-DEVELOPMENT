@@ -55,7 +55,20 @@ header {
     display: flex;
     justify-content: space-around;
 }
-
+.submit-button {
+    width: 14%;
+    height: 50px;
+    background-color: rgba(176, 226, 26, 0.327); /* More transparency */
+    border: none;
+    color: #333;
+    font-size: 16px;
+    transition: all 0.5s ease; /* Larger floating effect */
+}
+.submit-button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: scale(1.1); /* Enlarged on hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
 .button {
     width: 14%;
     height: 50px;
